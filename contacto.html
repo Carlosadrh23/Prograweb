@@ -23,7 +23,7 @@
 
     <a href="tel:6122887916"> Llamar </a>
 
-    <form>
+    <form action="index.html"  target="_self"  method="post" autocomplete="off">
       
       <label>
         Correo electrónico
@@ -32,10 +32,22 @@
   
       <br>
 
+      <label >
+        Password
+      </label>
+      <input type="password" name="">
+      <br>
+
+      <label >
+        Seleccione opcion
+      </label>
+      
+
       <label for="name"> 
         Ingrese su nombre:
       </label>
-      <input type="text" name="name" id="name" autofocus value="" size="50" minlength="5" maxlength="10" required>
+      <input type="text" name="name" id="name" autofocus value="" size="50" 
+      minlength="3" maxlength="10" required pattern="[A-Za-z]{3}" title="Solo 3 letras">
 
       <br>
       <label for="apellido">
